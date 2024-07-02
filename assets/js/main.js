@@ -152,13 +152,15 @@ class BarraDeProgressoCircular{
  let porcentagem = elm.dataset.porcentagem
  let conteudo    = elm.innerHTML
  let timer = null
-  
+ let t = this
+ elm.animar = false
+ 
   elm.innerHTML = `
            <div class="barra-de-progresso-circular" style="--porcentagem: ${porcentagem}">
                <svg  width="120" height="120" fill="none" stroke="#eeeeee" stroke-width="8" stroke-linecap="round" transform="rotate(-90)">
                    <circle cx="60" cy="60" r="50" stroke="#555555"></circle>
                    <circle cx="60" cy="60" r="50" stroke="var(--cor-principal)"></circle>
-                   <span>${porcentagem}%</span>
+                   <span>${porcentagem}</span>
                </svg>
            </div>`
            
@@ -166,7 +168,24 @@ class BarraDeProgressoCircular{
            let circulo = elm.querySelector('circle:nth-child(2)') // Seleciona o segundo círculo.
            let elmPorcentagem = elm.querySelector('.barra-de-progresso-circular span') // Elemento que recebe os valores de porcentagem.
            
+           function animarScroll(){
+// Anima a barra de progresso quando a página é rolada até ela.
+
+              let offsetTop = elm.offsetTop
+              let pageY = window.pageYOffset
+                 
+                 if( (pageY/3)*4 >= offsetTop && elm.animar === false){
+                    t.animar()
+                    elm.animar = true;
+                 }else if((pageY/3)*4 < offsetTop && elm.animar === true){
+                    elm.animar = false
+                 }
+           }
+           
+           window.addEventListener('scroll', animarScroll)
+           
            this.animar = function(){
+            elm.animar = true
            // Anima a barra de progresso, fazendo ela ir de 0 a porcentagem final.
            circulo.animate([{
                strokeDashoffset : 312
@@ -182,6 +201,7 @@ class BarraDeProgressoCircular{
                    
                    elmPorcentagem.innerHTML = n+'%'
            }, Math.round(2500/porcentagem))
+           
         }
     }
 
@@ -207,7 +227,7 @@ class BarraDeProgressoCircular{
 document.querySelectorAll('.barra-de-progresso')
      .forEach((elm)=>{
        let progresso =  new BarraDeProgressoCircular(elm)
-           elm.progresso = progresso
+           
      })
 
 
@@ -241,5 +261,3 @@ $scrollReveal.reveal(' footer h1, footer p, footer .redes-sociais',{
   scale: 0,
   distance: 0
 })
-
-
