@@ -169,8 +169,6 @@ class BarraDeProgressoCircular{
            let elmPorcentagem = elm.querySelector('.barra-de-progresso-circular span') // Elemento que recebe os valores de porcentagem.
            
            function animarScroll(){
-// Anima a barra de progresso quando a página é rolada até ela.
-
               let offsetTop = elm.offsetTop
               let pageY = window.pageYOffset
                  
@@ -246,7 +244,7 @@ const $scrollReveal = ScrollReveal({
 
 $scrollReveal.reveal('.apresentacao .titulo span, .biografia .titulo, .projetos h1:not(.card h1), .titulo-sublinhado, .barra-de-progresso, .redes-sociais, .inicio button',{})
 
-$scrollReveal.reveal('.redes-sociais, .conhecimentos p, .biografia p',{delay: 100, origin: 'bottom'})
+$scrollReveal.reveal('.redes-sociais, .biografia p, .conhecimentos p, .projetos .paragrafo',{delay: 100, origin: 'bottom'})
 
 $scrollReveal.reveal('footer .redes-sociais i',{ origin: 'bottom'})
 
