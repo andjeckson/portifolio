@@ -6,14 +6,6 @@
 }
 
 
-.terminal .logs{
- display: flex;
- flex-direction: column;
- gap: 10px 0;
- margin-top: 30px;
- color: var(--cor-principal);
-}
-
 :root{
  --cor-principal: #206AFF;
  --cor-secundaria: #051C4A;
@@ -613,9 +605,10 @@ body{
  text-indent: 1rem;
 }
 
-.conhecimentos p{
+.conhecimentos p,
+.projetos p.paragrafo{
  font-size: calc(var(--texto-normal) * 1.2);
- margin-bottom: 50px;
+ margin-bottom: 100px;
  text-align: center;
 }
 
@@ -970,3 +963,4 @@ a.link:hover{
  -o-animation: subir-revelar .4s ease-in-out;
  animation: subir-revelar .4s ease-in-out;
 }
+
