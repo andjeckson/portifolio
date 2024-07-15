@@ -708,6 +708,23 @@ body{
  gap:15px
 }
 
+.projetos .grid .card.novo::after{
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  content: 'NOVO';
+  font-size: var(--texto-pequeno);
+  right: 5px;
+  top: 5px;
+  background: var(--cor-principal);
+  color: var(--cor-de-texto);
+  -webkit-border-radius: .3rem;
+  -moz-border-radius: .3rem;
+  border-radius: 2rem;
+}
+
 .projetos .card img{
  width: 80px;
  height: 80px;
@@ -767,20 +784,22 @@ footer{
  border-top-right-radius: 1.5rem;
  padding: 30px;
  padding-bottom: 60px;
- margin-top: 100px;
+ margin-top: 200px;
  width: 100%;
  -webkit-box-sizing: border-box;
  -moz-box-sizing: border-box;
  box-sizing: border-box;
  background: var(--cor-secundaria);
  overflow: hidden;
+ height: 400px;
 }
 
 footer section{
  display: flex;
  align-items: center;
- justify-content: center;
+ justify-content: space-evenly;
  flex-direction: column;
+ height: 100%;
  gap: 30px;
 }
 footer .titulo{
