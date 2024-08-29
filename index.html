@@ -2,15 +2,21 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta name="author" content="Andjeckson">
+  
+  <meta name="author" content="Andjeckson Tavares Guimarães">
+  <meta name="description" content="Eu me chamo Andjeckson e esse é meu portifólio.">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=none">
-  <meta name="apple-mobile-web-app-status-bar-style" content="#141414">
-  <meta name="msapplication-navbutton-color" content="#141414">
-  <meta name="theme-color" content="#141414">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-status-bar-style" content="#0E0E0E">
+  <meta name="msapplication-navbutton-color" content="#0E0E0E">
+  <meta name="navbutton-color" content="#0E0E0E">
+  <meta name="theme-color" content="#0E0E0E">
+  
   <title>Andjeckson</title>
+  
   <link rel="shortcut icon" href="assets/img/Favicon.webp" type="image/webp" />
-  <link rel="stylesheet" href="assets/css/style.css">
+  
+  <link rel="stylesheet" href="assets/css/style.css">  
   
   <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css">
   <script src="assets/scrollreveal/js/scrollreveal.js" defer></script> <!--
@@ -29,13 +35,14 @@
              <i class="bx bx-rocket" ></i>
              <span>Andjeckson</span>
           </h3>
-          <nav class="navegacao">
+          <nav class="menu">
               <ul class="lista-de-menu">
-               <li style="--d: .2s" class="ativar "><a href="#inicio" >Início</a></li>
-               <li style="--d: .4s"><a href="#sobre">Sobre</a></li>
-               <li style="--d: .6s"><a href="#conhecimentos">Conhecimentos</a></li>
-               <li style="--d: .8s"><a href="#projetos">Projetos</a></li>
-               <li style="--d: 1s"><a href="#contatos">Contatos</a></li>
+                <h1>Menu</i> </h1>
+               <li style="--d: .2s" class="ativar"><a href="#inicio" class=" bx bxs-home">Início</a></li>
+               <li style="--d: .4s"><a href="#sobre" class="bx bxs-info-circle">Sobre</a></li>
+               <li style="--d: .6s"><a href="#conhecimentos" class="bx bxs-brain">Conhecimentos</a></li>
+               <li style="--d: .8s"><a href="#projetos" class="bx bxs-grid">Projetos</a></li>
+               <li style="--d: 1s"><a href="#contatos" class="bx bx-support">Contatos</a></li>
               </ul>
           </nav>
           <div class="hamburguer"></div>
@@ -69,7 +76,13 @@
           
         </div>
          <div class="blob">
-            <svg viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="var(--cor-principal)">
+            <svg viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="url(#bg)" stroke="#023CFF" stroke-width="2">
+              
+              <linearGradient id="bg" y1="0" y2="45%">
+                <stop offset="0" stop-color="#000000"></stop>
+                <stop offset="50%" stop-color="#1B41C2"></stop>
+                <stop offset="100%" stop-color="#000000"></stop>
+              </linearGradient>
              <mask id="mask0" mask-type="alpha">
                 <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
               </mask>
@@ -98,7 +111,7 @@
         <h1 class="titulo-sublinhado" >Conhecimentos</h1>
         <p >Conheça algumas das ferramentas com as quais estou familiarizado.</p>
         <div class="grid">
-        <div class="barra-de-progresso" data-porcentagem="80" >
+        <div class="barra-de-progresso" data-porcentagem="72" >
             <span class="nome">
                <i class="bx bxl-html5"></i>
                <b>HTML5</b>
@@ -287,23 +300,41 @@
       <section id="contatos">
        <h1 class="titulo">Andjeckson</h1>
        <div class="redes-sociais">
+         
           <a href="https://Instagram.com/andjeckson"
              target="_blank"
-             rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
+             rel="noopener noreferrer"
+             class="link instagram">
+            <i class="bx bxl-instagram"></i>
+            <span>Instagram</span>
+         </a>
+             
           <a href="https://www.facebook.com/andjeckson.tavares.3"
              target="_blank"
-             rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a>
+             rel="noopener noreferrer"
+             class="link facebook">
+            <i class="bx bxl-facebook"></i>
+            <span>Facebook</span>
+         </a>
           <a href="https://api.whatsapp.com/send?phone=5533999062051&text=Oi"
              target="_blank"
-             rel="noopener noreferrer"><i class="bx bxl-whatsapp"></i></a>
+             rel="noopener noreferrer"
+             class="link whatsapp"><i class="bx bxl-whatsapp"></i>
+             <span>WhatsApp</span>
+           </a>
           <a href="https://t.me/andjeckson"
              target="_blank"
-             rel="noopener noreferrer"><i class="bx bxl-telegram"></i></a>
+             rel="noopener noreferrer"
+             class="link telegram">
+            <i class="bx bxl-telegram"></i>
+            <span>Telegram</span>
+          </a>
        </div>
-       <p><a href="mailto:andjecksont@gmail.com"
+       <p class="ripple"><a 
              target="_blank"
              rel="noopener noreferrer"
-             class="link">andjecksont@gmail.com</a></p>
+             class="email">andjecksont@gmail.com</a>
+       </p>
       </section>
    </footer>
    <!-- ===== JAVASCRIPT DESABILITADO ===== -->
