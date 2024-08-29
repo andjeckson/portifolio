@@ -10,14 +10,14 @@ HTMLElement.prototype.on = function(evt, fnc) {
 // MENU
 
 let hamburguer = $('.hamburguer')
-let navegacao  = $('.navegacao')
-let itensMenu  = document.querySelectorAll('.navegacao li')
+let menu  = $('.menu')
+let itensMenu  = document.querySelectorAll('.menu li')
 
     hamburguer.on('click', ()=>{
          // Abre ou fecha o hambúrguer.
          hamburguer.classList.toggle('fechar')
          // Abre ou fecha o menu
-         navegacao.classList.toggle('abrir')
+         menu.classList.toggle('abrir')
     })
 
 itensMenu.forEach((li)=>{
@@ -43,13 +43,13 @@ itensMenu.forEach((li)=>{
 
 // Abre o menu
 function abrirMenu(){
-  navegacao.classList.add('abrir')
+  menu.classList.add('abrir')
   hamburguer.classList.add('fechar')
 }
 
 // Fecha o menu
 function fecharMenu(){
-  navegacao.classList.remove('abrir')
+  menu.classList.remove('abrir')
   hamburguer.classList.remove('fechar')
 }
 
@@ -99,6 +99,9 @@ function marcarItemDeMenu(){
  function ripple(elm, evt){
 
      const RIPPLED_EVENT = new CustomEvent('RIPPLED') // Cria um evento personalizado.
+     
+     const DOMRect = elm.getBoundingClientRect()
+     
      const {target} = evt
      const {clientX, clientY, pageX, pageY} = evt
      const {offsetLeft, offsetTop, scrollHeight} = target
@@ -106,8 +109,8 @@ function marcarItemDeMenu(){
 
      const {width, height} = target.getBoundingClientRect()
      let [x, y, d] = [
-                     (clientX - offsetLeft),
-                     (clientY - offsetTop),
+                     (clientX - DOMRect.x),
+                     (clientY - DOMRect.y),
                      (width + height) / 2 * Math.PI + 'px'
       ]
       
@@ -121,22 +124,25 @@ function marcarItemDeMenu(){
       
       // Cria uma bolha que é adicionada ao elemento
       var criarBolha = function(obj = {}){
-          const {elmentoPai, posicaoX, posicaoY, diametro} = obj
+          const {elementoPai, posicaoX, posicaoY, diametro} = obj
           const bolha = document.createElement('span')
                 bolha.classList.add('bolha')
                 bolha.style.setProperty('left', posicaoX)
                 bolha.style.setProperty('top', posicaoY)
                 bolha.style.setProperty('--diametro', diametro)
-                elmentoPai.appendChild(bolha)
+                elementoPai.appendChild(bolha)
                 
-                elmentoPai.onanimationend = ()=>{
+                elementoPai.onanimationend = ()=>{
                    bolha.remove() // Remove a bolha
-                   elmentoPai.dispatchEvent(RIPPLED_EVENT) // Dispara o evento "RIPPLED"
+                   
+                   evt.type === 'click' ?
+                       elementoPai.dispatchEvent(RIPPLED_EVENT) :
+                        null // Dispara o evento "RIPPLED" se houver clique
                 }
       }
       
       criarBolha({
-        elmentoPai: elm,
+        elementoPai: elm,
          posicaoX : x,
          posicaoY : y,
          diametro : d
@@ -157,10 +163,14 @@ class BarraDeProgressoCircular{
  
   elm.innerHTML = `
            <div class="barra-de-progresso-circular" style="--porcentagem: ${porcentagem}">
-               <svg  width="120" height="120" fill="none" stroke="#eeeeee" stroke-width="8" stroke-linecap="round" transform="rotate(-90)">
-                   <circle cx="60" cy="60" r="50" stroke="#555555"></circle>
-                   <circle cx="60" cy="60" r="50" stroke="var(--cor-principal)"></circle>
+               <svg  width="120" height="120" fill="none" stroke="#ffffff" stroke-width="8" stroke-linecap="round" transform="rotate(-90)">
+                   <circle cx="60" cy="60" r="50" stroke="#aaa"></circle>
+                   <circle cx="60" cy="60" r="50" stroke="url(#bg)"></circle>
                    <span>${porcentagem}</span>
+                  <linearGradient id="bg" >
+                <stop offset="50%" stop-color="#1B41C2"></stop>
+                <stop offset="100%" stop-color="#023CFF"></stop>
+              </linearGradient>
                </svg>
            </div>`
            
@@ -210,6 +220,9 @@ class BarraDeProgressoCircular{
  let elmRipple = document.querySelectorAll('.ripple')
      elmRipple.forEach((elm)=>{
         elm.on('click', (evt)=> ripple(elm, evt))
+        
+        elm.on('mouseover', (evt)=> ripple(elm, evt))
+        
  })
  
 
@@ -233,7 +246,7 @@ document.querySelectorAll('.barra-de-progresso')
 
 const $scrollReveal = ScrollReveal({
     origin: 'top',
-    distance: '60px',
+    distance: '30px',
     duration: 1200,
     delay: 150,
     interval: 1200,
@@ -259,3 +272,4 @@ $scrollReveal.reveal(' footer h1, footer p, footer .redes-sociais',{
   scale: 0,
   distance: 0
 })
+
