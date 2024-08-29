@@ -8,11 +8,8 @@
 
 :root{
  --cor-principal:  #1B41C2;
- --cor-secundaria: #051C4A;
  --cor-de-titulo: #eee;
  --cor-de-texto: #E7E7E7;
- --cor-da-barra-de-navegacao: #363636;
- --cor-escura: #252525;
  --medida: calc((100vw + 100vh) / 100);
  --texto-pequeno: clamp(.75rem, var(--medida) , 0.95rem);
  --texto-normal: clamp( .85rem, calc(var(--medida) * 1.2), 1rem);
@@ -285,6 +282,7 @@ body{
  gap: 15px;
  font-size: var(--texto-normal);
  width: max-content;
+ text-transform: uppercase;
 }
 
 .barra-de-navegacao .menu{
@@ -531,6 +529,11 @@ body{
   -webkit-filter: grayscale(30%);
  -ms-filter: grayscale(30%);
  filter: grayscale(30%);
+ -webkit-transform: scale(.95);
+ -moz-transform: scale(.95);
+ -ms-transform: scale(.95);
+ -o-transform: scale(.95);
+ transform: scale(.95);
 }
 
 .inicio .apresentacao button *,
