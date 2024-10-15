@@ -285,7 +285,7 @@ body{
  text-transform: uppercase;
 }
 
-.barra-de-navegacao .menu{
+.barra-de-navegacao .navegacao{
   position: absolute;
   left: 100%;
   top: 100%;
@@ -302,13 +302,14 @@ body{
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background: #00000095;
 }
 
-.barra-de-navegacao .menu.abrir{
+.barra-de-navegacao .navegacao.abrir{
  left: 0;
 }
 
-.menu ul{
+.navegacao menu{
  display: flex;
  flex-direction: column;
  gap: 10px 0;
@@ -329,13 +330,13 @@ body{
  background: linear-gradient(#000000, #0D145F, #000000);
 }
 
-.menu ul h1{
+.navegacao menu h2{
   margin-bottom: 30px;
   text-transform: uppercase;
   font-size: var(--texto-medio);
 }
 
-.menu ul li{
+.navegacao menu li{
  display: flex;
  align-items: center;
  width: max-content;
@@ -356,7 +357,7 @@ body{
 }
 
 
-.menu.abrir ul li
+.navegacao.abrir menu li
 {
  opacity: 1;
  -webkit-transform: translateY(0);
@@ -371,7 +372,7 @@ body{
  transition-delay: var(--d);
 }
 
-.menu a{
+.navegacao a{
  display: inline-flex;
  align-items: center;
  gap: 0 5px;
@@ -390,16 +391,16 @@ body{
  pointer-events: none;
 }
 
-.menu a:before{
+.navegacao a:before{
   font-weight: normal;
 }
 
-.menu ul li.ativar a{
+.navegacao menu li.ativar a{
  border-bottom-color: var(--cor-principal);
 }
 
 
-.menu.abrir ul li:hover a{
+.navegacao.abrir menu li:hover a{
   background: #ffffff25;
   padding: 0 10px;
   -webkit-border-radius: 2rem;
@@ -485,7 +486,7 @@ body{
 }
 
 .inicio .apresentacao .texto-destaque{
- color: var(--cor-principal);
+ color: #6185FF;
 }
 
 
@@ -639,7 +640,7 @@ body{
  border-radius: 1rem;
 }
 
-.biografia h1{
+.biografia h2{
  font-size: var(--texto-medio);
  text-align: center;
  margin-bottom: 15px;
@@ -756,9 +757,9 @@ body{
  border-radius: 20px;
  overflow: hidden;
  gap:15px;
- -webkit-box-shadow: 0 10px 50px #023CFF25;
- -moz-box-shadow: 0 10px 50px #023CFF25;
- box-shadow: 0 10px 50px #023CFF25;
+ -webkit-box-shadow: 0 10px 50px #023CFF65;
+ -moz-box-shadow: 0 10px 50px #023CFF65;
+ box-shadow: 0 10px 50px #023CFF65;
  border: 1px solid #023CFF;
 }
 
@@ -823,7 +824,7 @@ body{
 }
 
 .projetos .card a.btn.secundario{
- background: #0F0F0F;
+ background-image: linear-gradient(45deg, #000, #333, #000);
  -webkit-box-shadow: none;
  -moz-box-shadow: none;
  box-shadow: none;
@@ -942,7 +943,7 @@ a.email:hover{
 
 @media screen and (min-width : 768px){
   
-.barra-de-navegacao .menu{
+.barra-de-navegacao .navegacao{
  position: static;
  height: 100%;
  left: 0;
@@ -951,7 +952,7 @@ a.email:hover{
  background: transparent;
 }
 
-.menu ul{
+.navegacao menu{
  flex-direction: row;
  align-items: center;
  justify-content: end;
@@ -962,11 +963,11 @@ a.email:hover{
  border-left: none;
 }
 
-.menu ul h1{
+.navegacao menu h1{
   display: none;
 }
 
-.menu ul li
+.navegacao menu li
 {
  width: max-content;
  opacity: 1;
@@ -977,7 +978,7 @@ a.email:hover{
  transform: none;
 }
 
-.menu a:before{
+.navegacao a:before{
   display: none;
 }
 
