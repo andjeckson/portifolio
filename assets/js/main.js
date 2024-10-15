@@ -10,8 +10,8 @@ HTMLElement.prototype.on = function(evt, fnc) {
 // MENU
 
 let hamburguer = $('.hamburguer')
-let menu  = $('.menu')
-let itensMenu  = document.querySelectorAll('.menu li')
+let menu  = $('.navegacao')
+let itensMenu  = document.querySelectorAll('.navegacao menu li')
 
     hamburguer.on('click', ()=>{
          // Abre ou fecha o hambúrguer.
@@ -255,7 +255,7 @@ const $scrollReveal = ScrollReveal({
 
 // Adiciona os efeitos de rolagem aos respectivos elementos
 
-$scrollReveal.reveal('.apresentacao .titulo span, .biografia .titulo, .projetos h1:not(.card h1), .titulo-sublinhado, .barra-de-progresso, .redes-sociais, .inicio button',{})
+$scrollReveal.reveal('.apresentacao .titulo p, .biografia .titulo, .projetos h1:not(.card h1), .titulo-sublinhado, .barra-de-progresso, .redes-sociais, .inicio button',{})
 
 $scrollReveal.reveal('.redes-sociais, .biografia p, .conhecimentos p, .projetos .paragrafo',{delay: 100, origin: 'bottom'})
 
