@@ -24,6 +24,7 @@
    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css'>
    
   <script src="https://unpkg.com/scrollreveal"defer ></script>-->
+<base href="assets">
   <script src="assets/js/main.js" defer></script>
 
 </head>
@@ -35,15 +36,16 @@
              <i class="bx bx-rocket" ></i>
              <span>Andjeckson</span>
           </h3>
-          <nav class="menu">
-              <ul class="lista-de-menu">
-                <h1>Menu</i> </h1>
+          <nav class="navegacao">
+              <menu class="lista-de-menu">
+               <h2>Menu</h2>
+               
                <li style="--d: .2s" class="ativar"><a href="#inicio" class=" bx bxs-home">Início</a></li>
                <li style="--d: .4s"><a href="#sobre" class="bx bxs-info-circle">Sobre</a></li>
                <li style="--d: .6s"><a href="#conhecimentos" class="bx bxs-brain">Conhecimentos</a></li>
                <li style="--d: .8s"><a href="#projetos" class="bx bxs-grid">Projetos</a></li>
                <li style="--d: 1s"><a href="#contatos" class="bx bx-support">Contatos</a></li>
-              </ul>
+              </menu>
           </nav>
           <div class="hamburguer"></div>
       </header>
@@ -52,10 +54,10 @@
          <div class="grid">
            <div class="apresentacao">
              <h1 class="titulo">
-                 <span>Olá,</span>
-                 <span>meu nome é</span>
-                 <span>Andjeckson,</span>
-                 <span class="texto-destaque">Dev Front-end.</span>
+                 <p>Olá,</p>
+                 <p>meu nome é</p>
+                 <p>Andjeckson,</p>
+                 <p class="texto-destaque">Dev Front-end.</p>
              </h1>
              <button type="button"
                      class="ripple"
@@ -67,12 +69,18 @@
         <div class="redes-sociais">
           <a href="https://github.com/andjeckson"
              target="_blank"
-             rel="noopener noreferrer"><i class="bx bxl-github"></i></a>
-          <a href="https://www.linkedin.com/in/andjeckson"       target="_blank"
-             rel="noopener noreferrer"><i class="bx bxl-linkedin"></i></a>
+             rel="noopener noreferrer"><i class="bx bxl-github"
+             alt="Andjeckson no GitHub"></i></a>
+             
+          <a href="https://www.linkedin.com/in/andjeckson"
+             target="_blank"
+             rel="noopener noreferrer"><i class="bx bxl-linkedin"
+             alt="Andjeckson no LinkedIn"></i></a>
+             
           <a href="https://instagram.com/andjeckson"
              target="_blank"
-             rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
+             rel="noopener noreferrer"><i class="bx bxl-instagram"
+             alt="Andjeckson no Instagram"></i></a>
           
         </div>
          <div class="blob">
@@ -95,20 +103,20 @@
      </section>
    <!-- ===== SOBRE ===== -->
    <section class="sobre" id="sobre">
-     <h1 class="titulo-sublinhado" >Sobre</h1>
+     <h2 class="titulo-sublinhado" >Sobre</h2>
       <div class="biografia" >
          <div class="imagem ripple">
             <img src="assets/img/Andjeckson.webp" alt="Andjeckson" loading="lazy">
          </div>
           <header class="texto">
-            <h1 class="titulo">Eu sou Andjeckson!</h1>
+            <h2 class="titulo">Eu sou Andjeckson!</h2>
             <p>Olá, meu nome é Andjeckson, sou natural de Jenipapo de Minas. Apaixonado por tecnologia desde criança, conheci o mundo da programação em 2019, quando por curiosidade abri um arquivo html em formato txt, daí então, resolvi aprender a respeito.</p>
        </header>
       </div>
    </section>
     <!-- ===== CONHECIMENTOS ===== -->
     <section class="conhecimentos" id="conhecimentos">
-        <h1 class="titulo-sublinhado" >Conhecimentos</h1>
+        <h2 class="titulo-sublinhado" >Conhecimentos</h2>
         <p >Conheça algumas das ferramentas com as quais estou familiarizado.</p>
         <div class="grid">
         <div class="barra-de-progresso" data-porcentagem="72" >
@@ -139,12 +147,12 @@
     </section>
  <!--====== PROJETOS ===== -->
     <section class="projetos" id="projetos">
-        <h1 class="titulo-sublinhado">Projetos</h1>
+        <h2 class="titulo-sublinhado">Projetos</h2>
         <p class="paragrafo">Conheça alguns dos meus projetos.</p>
         <div class="grid">
             <div class="card">
                <img src="assets/img/Jogo da Velha.webp" alt="">
-               <h1>Jogo da Velha</h1>
+               <h2>Jogo da Velha</h2>
                <p class="descricao">Jogo da Velha desenvolvido usando HTML, CSS & JavaScript.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -165,7 +173,7 @@
             </div>
             <div class="card">
                <img src="assets/img/Clima.webp" alt="">
-               <h1>Clima</h1>
+               <h2>Clima</h2>
                <p class="descricao">Aplicativo simples de clima desenvolvido usando HTML, CSS, JS e a API Open Weather.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -186,7 +194,7 @@
           </div>
           <div class="card novo">
                <img src="assets/img/Tarefas.webp" alt="">
-               <h1>Tarefas</h1>
+               <h2>Tarefas</h2>
                <p class="descricao">Organize suas tarefas de forma simples e rápida!</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -207,7 +215,7 @@
           </div>
           <div class="card novo">
                <img src="assets/img/QRCode.webp" alt="">
-               <h1>Gerador de QR Code</h1>
+               <h2>Gerador de QR Code</h2>
                <p class="descricao">Crie QR Code de forma simples rápida e personalizável.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -229,7 +237,7 @@
           
             <div class="card">
                <img src="assets/img/Calculadora.webp" alt="">
-               <h1>Calculadora</h1>
+               <h2>Calculadora</h2>
                <p class="descricao">Calculadora básica, desenvolvida usando HTML, CSS & JavaScript.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -250,8 +258,30 @@
           </div>
           
           <div class="card novo">
+               <img src="assets/img/Cronometro.webp" alt="">
+               <h2>Cronômetro</h2>
+               <p class="descricao">Cronômetro feito com HTML, CSS e JS.</p>
+               <div class="acoes">
+                    <a class="btn secundario ripple"
+                       href="https://github.com/andjeckson/cronometro"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                         <i class="bx bxl-github"></i>
+                         <span>Repositório</span>
+               </a>
+                <a class="btn ripple"
+                   href="https://andjeckson.github.io/cronometro"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                     <i class="bx bx-show"></i>
+                     <span>Visualizar</span>
+               </a>
+             </div>
+          </div>
+          
+          <div class="card novo">
                <img src="assets/img/Card-Tenis-Nike.webp" alt="">
-               <h1>Card Tênis da Nike</h1>
+               <h2>Card Tênis da Nike</h2>
                <p class="descricao">Card do tênis de corrida da Nike.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -273,7 +303,7 @@
           
           <div class="card">
                <img src="assets/img/Redmi-Airdots.webp" alt="">
-               <h1>Card Redmi Airdots TWS-6</h1>
+               <h2>Card Redmi Airdots TWS-6</h2>
                <p class="descricao">Card do fone de ouvido sem fio da Xiaomi</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -298,7 +328,7 @@
    <!-- ===== FOOTER ===== -->
    <footer>
       <section id="contatos">
-       <h1 class="titulo">Andjeckson</h1>
+       <h2 class="titulo">Andjeckson</h2>
        <div class="redes-sociais">
          
           <a href="https://Instagram.com/andjeckson"
@@ -342,7 +372,7 @@
    <noscript>
       <div class="popup">
       <dialog open>
-          <h1><i class="bx bx-info-circle"></i>AVISO!</h1>
+          <h2><i class="bx bx-info-circle"></i>AVISO!</h2>
           <p>Este <i>site</i> necessita de <b>JavaScript</b> para funcionar. Por favor, ative e tente novamente.</p>
       </dialog>
     </div>
