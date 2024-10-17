@@ -796,7 +796,7 @@ body{
  filter: drop-shadow(0 0 10px #00000045);
 }
 
-.projetos .card h1{
+.projetos .card h2{
  font-size: var(--texto-medio);
  text-align: center;
 }
@@ -963,7 +963,7 @@ a.email:hover{
  border-left: none;
 }
 
-.navegacao menu h1{
+.navegacao menu h2{
   display: none;
 }
 
@@ -1063,7 +1063,7 @@ a.email:hover{
  max-width: 500px;
 }
 
-.popup dialog h1{
+.popup dialog h2{
  font-size: var(--texto-medio);
  color: #9B7A02;
 }
