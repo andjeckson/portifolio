@@ -38,7 +38,7 @@
           </h3>
           <nav class="navegacao">
               <menu class="lista-de-menu">
-               <h2>Menu</h2>
+               <h3>Menu</h3>
                
                <li style="--d: .2s" class="ativar"><a href="#inicio" class=" bx bxs-home">Início</a></li>
                <li style="--d: .4s"><a href="#sobre" class="bx bxs-info-circle">Sobre</a></li>
@@ -103,7 +103,7 @@
      </section>
    <!-- ===== SOBRE ===== -->
    <section class="sobre" id="sobre">
-     <h2 class="titulo-sublinhado" >Sobre</h2>
+     <h3 class="titulo-sublinhado" >Sobre</h3>
       <div class="biografia" >
          <div class="imagem ripple">
             <img src="assets/img/Andjeckson.webp" alt="Andjeckson" loading="lazy">
@@ -116,7 +116,7 @@
    </section>
     <!-- ===== CONHECIMENTOS ===== -->
     <section class="conhecimentos" id="conhecimentos">
-        <h2 class="titulo-sublinhado" >Conhecimentos</h2>
+        <h3 class="titulo-sublinhado" >Conhecimentos</h3>
         <p >Conheça algumas das ferramentas com as quais estou familiarizado.</p>
         <div class="grid">
         <div class="barra-de-progresso" data-porcentagem="72" >
@@ -147,12 +147,13 @@
     </section>
  <!--====== PROJETOS ===== -->
     <section class="projetos" id="projetos">
-        <h2 class="titulo-sublinhado">Projetos</h2>
+        <h3 class="titulo-sublinhado">Projetos</h3>
         <p class="paragrafo">Conheça alguns dos meus projetos.</p>
         <div class="grid">
-            <div class="card">
-               <img src="assets/img/Jogo da Velha.webp" alt="">
-               <h2>Jogo da Velha</h2>
+          
+            <div class="card" id="jogo-da-velha">
+               <img src="assets/img/Jogo da Velha.webp" alt="logo">
+               <h3>Jogo da Velha</h3>
                <p class="descricao">Jogo da Velha desenvolvido usando HTML, CSS & JavaScript.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -171,9 +172,9 @@
                </a>
                </div>
             </div>
-            <div class="card">
-               <img src="assets/img/Clima.webp" alt="">
-               <h2>Clima</h2>
+            <div class="card" id="clima">
+               <img src="assets/img/Clima.webp" alt="logo">
+               <h3>Clima</h3>
                <p class="descricao">Aplicativo simples de clima desenvolvido usando HTML, CSS, JS e a API Open Weather.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -192,9 +193,9 @@
                </a>
              </div>
           </div>
-          <div class="card novo">
-               <img src="assets/img/Tarefas.webp" alt="">
-               <h2>Tarefas</h2>
+          <div class="card" id="tarefas">
+               <img src="assets/img/Tarefas.webp" alt="logo">
+               <h3>Tarefas</h3>
                <p class="descricao">Organize suas tarefas de forma simples e rápida!</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -213,9 +214,31 @@
                </a>
              </div>
           </div>
-          <div class="card novo">
-               <img src="assets/img/QRCode.webp" alt="">
-               <h2>Gerador de QR Code</h2>
+          
+          <div class="card novo" id="calculadora-de-juros">
+               <img src="assets/img/Calculadora-de-Juros.webp" alt="logo">
+               <h3>Calculadora de Juros</h3>
+               <p class="descricao">Calcule tanto juros simples, como juros compostos com essa ferramenta simples e fácil de usar.</p>
+               <div class="acoes">
+                    <a class="btn secundario ripple"
+                       href="https://github.com/andjeckson/calculadora-de-juros"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                         <i class="bx bxl-github"></i>
+                         <span>Repositório</span>
+               </a>
+                <a class="btn ripple"
+                   href="https://andjeckson.github.io/calculadora-de-juros"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                     <i class="bx bx-show"></i>
+                     <span>Visualizar</span>
+               </a>
+             </div>
+          </div>
+          <div class="card novo" id="gerador-de-qr-code">
+               <img src="assets/img/QRCode.webp" alt="logo">
+               <h3>Gerador de QR Code</h3>
                <p class="descricao">Crie QR Code de forma simples rápida e personalizável.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -235,9 +258,9 @@
              </div>
           </div>
           
-            <div class="card">
-               <img src="assets/img/Calculadora.webp" alt="">
-               <h2>Calculadora</h2>
+            <div class="card" id="calculadora">
+               <img src="assets/img/Calculadora.webp" alt="logo">
+               <h3>Calculadora</h3>
                <p class="descricao">Calculadora básica, desenvolvida usando HTML, CSS & JavaScript.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -257,9 +280,9 @@
              </div>
           </div>
           
-          <div class="card novo">
-               <img src="assets/img/Cronometro.webp" alt="">
-               <h2>Cronômetro</h2>
+          <div class="card novo" id="cronometro">
+               <img src="assets/img/Cronometro.webp" alt="logo">
+               <h3>Cronômetro</h3>
                <p class="descricao">Cronômetro feito com HTML, CSS e JS.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -279,9 +302,9 @@
              </div>
           </div>
           
-          <div class="card novo">
-               <img src="assets/img/Card-Tenis-Nike.webp" alt="">
-               <h2>Card Tênis da Nike</h2>
+          <div class="card" id="card-tenis-da-nike">
+               <img src="assets/img/Card-Tenis-Nike.webp" alt="logo">
+               <h3>Card Tênis da Nike</h3>
                <p class="descricao">Card do tênis de corrida da Nike.</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -301,9 +324,9 @@
              </div>
           </div>
           
-          <div class="card">
-               <img src="assets/img/Redmi-Airdots.webp" alt="">
-               <h2>Card Redmi Airdots TWS-6</h2>
+          <div class="card" id="card-redmi-airdots">
+               <img src="assets/img/Redmi-Airdots.webp" alt="logo">
+               <h3>Card Redmi Airdots TWS-6</h3>
                <p class="descricao">Card do fone de ouvido sem fio da Xiaomi</p>
                <div class="acoes">
                     <a class="btn secundario ripple"
@@ -328,7 +351,7 @@
    <!-- ===== FOOTER ===== -->
    <footer>
       <section id="contatos">
-       <h2 class="titulo">Andjeckson</h2>
+       <h3 class="titulo">Andjeckson</h3>
        <div class="redes-sociais">
          
           <a href="https://Instagram.com/andjeckson"
@@ -372,7 +395,7 @@
    <noscript>
       <div class="popup">
       <dialog open>
-          <h2><i class="bx bx-info-circle"></i>AVISO!</h2>
+          <h3><i class="bx bx-info-circle"></i>AVISO!</h3>
           <p>Este <i>site</i> necessita de <b>JavaScript</b> para funcionar. Por favor, ative e tente novamente.</p>
       </dialog>
     </div>
