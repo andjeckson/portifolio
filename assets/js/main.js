@@ -272,4 +272,3 @@ $scrollReveal.reveal(' footer h1, footer p, footer .redes-sociais',{
   scale: 0,
   distance: 0
 })
-
