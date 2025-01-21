@@ -3,8 +3,14 @@
 @font-face {
  font-family: 'Poppins';
  src: url('../fonts/Poppins-Regular.ttf');
-  
 }
+
+@font-face {
+ font-family: 'KronaOne';
+ src: url('../fonts/KronaOne-Regular.ttf');
+}
+
+
 
 
 
@@ -62,9 +68,13 @@
 .titulo-sublinhado{
  margin: 100px auto;
  width: max-content;
- font-size: var(--texto-grande);
+ font-size: var(--texto-medio);
  text-align: center;
- border-bottom: 5px solid var(--cor-principal);}
+ border-bottom: 5px solid var(--cor-principal);
+ font-family: 'KronaOne', sans-serif;
+ font-weight: 100;
+ text-transform: uppercase
+}
 
 
 @-webkit-keyframes bolha {
@@ -264,7 +274,9 @@ body{
   z-index: 1000;
   background: #0F0F0Fa5;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);}
+  -webkit-backdrop-filter: blur(10px);
+  font-family: 'KronaOne', sans-serif;
+}
 
 
 .barra-de-navegacao .titulo{
@@ -289,7 +301,8 @@ body{
   z-index: 100;
   -webkit-user-select: none;
   user-select: none;
-  background: #000000DB;}
+  background: #000000DB;
+}
 
 
 .barra-de-navegacao .navegacao.abrir{
@@ -313,7 +326,8 @@ body{
  background: -webkit-linear-gradient(#000000, #0D145F, #000000);
  background: -moz-linear-gradient(#000000, #0D145F, #000000);
  background: -o-linear-gradient(#000000, #0D145F, #000000);
- background: linear-gradient(#000000, #0D145F, #000000);}
+ background: linear-gradient(#000000, #0D145F, #000000);
+}
 
 
 .navegacao menu h3{
@@ -333,7 +347,8 @@ body{
  transform: translateY(40px);
  -webkit-transition: .2s linear;
  transition: .2s linear;
- display: inline-flex;}
+ display: inline-flex;
+}
 
 
 
@@ -343,7 +358,9 @@ body{
  -webkit-transform: translateY(0);
  transform: translateY(0);
  -webkit-transition-delay: var(--d);
- transition-delay: var(--d);}
+ transition-delay: var(--d);
+  
+}
 
 
 .navegacao a{
@@ -359,15 +376,26 @@ body{
  -webkit-transition: 150ms ease;
  transition: 150ms ease;
  text-transform: uppercase;
- pointer-events: none;}
+ pointer-events: none;
+ cursor: pointer;
+}
+
+.navegacao a.bx{
+  font-family: 'Poppins'!important;
+  text-transform: uppercase
+}
 
 
 .navegacao a:before{
-  font-weight: normal;}
+  font-weight: normal;
+  font-family: 'boxicons'!important;
+}
 
 
 .navegacao menu li.ativar a{
- border-bottom-color: var(--cor-principal);}
+ border-bottom-color: var(--cor-principal);
+  
+}
 
 
 
@@ -432,7 +460,8 @@ body{
 
 .inicio .apresentacao{
  grid-area: apresentacao;
- width: 100%;}
+ width: 100%;
+}
 
 
 .inicio .apresentacao .titulo{
@@ -441,7 +470,12 @@ body{
  width: 100%;
  font-size: var(--texto-grande);
  -webkit-animation: subir-revelar .4s ease-in-out;
- animation: subir-revelar .4s ease-in-out;}
+ animation: subir-revelar .4s ease-in-out;
+ font-family: 'Poppins', sans-serif;
+ word-spacing: 2px;
+ line-height: calc( var(--texto-grande) * 1.35);
+ font-weight: bold;
+}
 
 
 .inicio .apresentacao .texto-destaque{
@@ -585,9 +619,12 @@ body{
 
 
 .biografia .titulo{
- font-size: var(--texto-medio);
+ font-size: calc(var(--texto-medio) * 0.8);
  text-align: center;
- margin-bottom: 15px;}
+ margin-bottom: 20px;
+  font-family: 'KronaOne', sans-serif;
+  text-transform: uppercase
+}
 
 
 .biografia p{
@@ -634,15 +671,19 @@ body{
 
 
 .barra-de-progresso .nome{
- font-size: var(--texto-medio);
+ font-size: calc(var(--texto-medio) * 0.8);
  display: inline-flex;
  align-items: center;
- justify-content: center;}
+ justify-content: center;
+  font-family: 'KronaOne', sans-serif;
+  text-transform: uppercase
+}
 
 
 .barra-de-progresso i{
  font-size: var(--texto-grande);
- margin-right: 10px;}
+ margin-right: 10px;
+}
 
 
 .barra-de-progresso-circular{
@@ -665,8 +706,13 @@ body{
 
 .barra-de-progresso-circular span{
  position: absolute;
- font-size: var(--texto-medio);}
+ font-size: var(--texto-medio);
+  font-family: 'KronaOne', sans-serif!important;
+}
 
+.barra-de-progresso-circular span sup{
+  font-size: var(--texto-pequeno);
+}
 
 /* ====== PROJETOS =====*/
 
@@ -734,8 +780,11 @@ body{
 
 
 .projetos .card h3{
- font-size: var(--texto-medio);
- text-align: center;}
+ font-size: calc(var(--texto-medio) * 0.8);
+ text-align: center;
+ text-transform: uppercase;
+ font-family: 'KronaOne', sans-serif;
+}
 
 
 .projetos .card p{
@@ -910,7 +959,9 @@ a.email:hover{
  padding: 0;
  margin: 0;
  background: transparent;
- border-left: none;}
+ border-left: none;
+  
+}
 
 
 .navegacao menu h3{
