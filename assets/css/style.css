@@ -323,10 +323,10 @@ body{
  box-shadow:  -5px 0 10px #22222245;
  border-left: 1px solid #023CFF45;
  overflow: hidden;
- background: -webkit-linear-gradient(#000000, #0D145F, #000000);
- background: -moz-linear-gradient(#000000, #0D145F, #000000);
- background: -o-linear-gradient(#000000, #0D145F, #000000);
- background: linear-gradient(#000000, #0D145F, #000000);
+ background: -webkit-linear-gradient(#000000, red, #000000);
+ background: -moz-linear-gradient(#000000, red, #000000);
+ background: -o-linear-gradient(#000000, red, #000000);
+ background: linear-gradient(#000000, red, #000000);
 }
 
 
@@ -661,10 +661,10 @@ body{
  -webkit-border-radius: .7rem;
  border-radius: .7rem;
  position: relative;
- background: -webkit-linear-gradient(#000000, #0D145F, #000000);
- background: -moz-linear-gradient(#000000, #0D145F, #000000);
- background: -o-linear-gradient(#000000, #0D145F, #000000);
- background: linear-gradient(#000000, #0D145F, #000000);
+ background: -webkit-linear-gradient(#000000, red, #000000);
+ background: -moz-linear-gradient(#000000, red, #000000);
+ background: -o-linear-gradient(#000000, red, #000000);
+ background: linear-gradient(#000000, red, #000000);
  -webkit-box-shadow: 0 10px 50px #023CFF25;
  box-shadow: 0 10px 50px #023CFF25;
  border: 1px solid #023CFF;}
@@ -735,10 +735,10 @@ body{
  max-width: 400px;
  height: 100%;
  padding: 20px;
- background: -webkit-linear-gradient(#000000, #0D145F, #000000);
- background: -moz-linear-gradient(#000000, #0D145F, #000000);
- background: -o-linear-gradient(#000000, #0D145F, #000000);
- background: linear-gradient(#000000, #0D145F, #000000);
+ background: -webkit-linear-gradient(#000000, red, #000000);
+ background: -moz-linear-gradient(#000000, red, #000000);
+ background: -o-linear-gradient(#000000, red, #000000);
+ background: linear-gradient(#000000, red, #000000);
  -webkit-border-radius: 20px;
  border-radius: 20px;
  overflow: hidden;
@@ -826,10 +826,10 @@ footer{
  padding-bottom: 60px;
  margin-top: 200px;
  width: 100%;
- background: -webkit-linear-gradient(#000000, #0D145F, #000000);
- background: -moz-linear-gradient(#000000, #0D145F, #000000);
- background: -o-linear-gradient(#000000, #0D145F, #000000);
- background: linear-gradient(#000000, #0D145F, #000000);
+ background: -webkit-linear-gradient(#000000, red, #000000);
+ background: -moz-linear-gradient(#000000, red, #000000);
+ background: -o-linear-gradient(#000000, red, #000000);
+ background: linear-gradient(#000000, red, #000000);
  overflow: hidden;
  height: 500px;
  border: 1px solid  #1B41C2;
